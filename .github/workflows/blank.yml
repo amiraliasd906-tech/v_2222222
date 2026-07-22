@@ -28,7 +28,7 @@ jobs:
       # gradlew / gradlew.bat and gradle/wrapper/gradle-wrapper.properties
       # are committed to the repo, but the binary gradle-wrapper.jar can't
       # be hand-written, so it's regenerated here from the real Gradle
-      # installed just above (the same gradle wrapper task Android
+      # installed just above (the same `gradle wrapper` task Android
       # Studio itself runs). This step is a no-op once the jar already
       # exists in the repo.
       - name: Ensure Gradle Wrapper jar exists
@@ -71,5 +71,3 @@ jobs:
         with:
           files: app/build/outputs/apk/debug/*.apk
           generate_release_notes: true
-          echo Add other actions to build,
-          echo test, and deploy your project.
